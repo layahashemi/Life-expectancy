@@ -1,7 +1,7 @@
 # Global Life Expectancy Across Countries (2000–2015)
 
 🔗 **Live Demo:**  
-https://layahashemi.github.io/infovis-life-expectancy/
+
 
 ## Overview
 This project is an interactive web-based visualization that explores **global life expectancy across countries from 2000 to 2015**.  
