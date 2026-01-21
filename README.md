@@ -76,5 +76,5 @@ The visualization is deployed using **GitHub Pages** and runs directly in a stan
 ---
 
 ## Author
-**Sanju Saji**  
-Information Visualization – TU Wien
+**laya hashemi**  
+Visual datascience – TU Wien
