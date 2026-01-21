@@ -2,7 +2,7 @@
 
 🔗 **Live Demo:**  
 
-
+https://layahashemi.github.io/Life-expectancy/
 ## Overview
 This project is an interactive web-based visualization that explores **global life expectancy across countries from 2000 to 2015**.  
 The dashboard enables users to analyze temporal trends, compare countries, and examine the relationship between life expectancy and economic indicators.
