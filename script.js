@@ -129,6 +129,13 @@ function renderBarChart() {
   // It only runs on initial load (before user picks anything).
   if (!state.country && rows.length > 0) state.country = rows[0].Country;
 
+  // Color scale for structural encoding (life expectancy → intensity)
+  const yearRows = fullData.filter(d => d.Year === state.year && d.life != null);
+  const colorScale = d3.scaleSequential()
+    .domain(d3.extent(yearRows, d => d.life))
+    .interpolator(d3.interpolateBlues);
+
+
   const x = d3.scaleBand()
     .domain(rows.map(d => d.Country))
     .range([0, innerBarW()])
@@ -164,7 +171,9 @@ function renderBarChart() {
     .attr("width", x.bandwidth())
     .attr("y", d => y(d.life))
     .attr("height", d => innerBarH() - y(d.life))
-    .attr("fill", d => (d.Country === state.country ? "black" : "#999"))
+    .attr("fill", d => colorScale(d.life))  // structural encoding (life → intensity)
+    .attr("stroke", d => d.Country === state.country ? "black" : "none") // highlight
+    .attr("stroke-width", d => d.Country === state.country ? 2 : 0)
     .on("mousemove", (event, d) => {
       showTooltip(
         `<b>${d.Country}</b><br/>Year: ${state.year}<br/>Life expectancy: ${d.life.toFixed(1)}`,
