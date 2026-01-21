@@ -1,6 +1,6 @@
 console.log("SCRIPT OK");
 
-const CSV_PATH = "data/Life_Expectancy_Data.csv";
+const CSV_PATH = "Life_Expectancy_Data.csv";
 const COL_LIFE = "Life expectancy "; // trailing space in dataset
 
 // Shared state
