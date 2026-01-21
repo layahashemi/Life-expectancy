@@ -7,7 +7,7 @@ https://layahashemi.github.io/infovis-life-expectancy/
 This project is an interactive web-based visualization that explores **global life expectancy across countries from 2000 to 2015**.  
 The dashboard enables users to analyze temporal trends, compare countries, and examine the relationship between life expectancy and economic indicators.
 
-The project was developed as part of ** Assignment ** for the * Visual datascience* course.
+The project was developed as part of  Assignment for the Visual datascience course.
 
 ---
 
